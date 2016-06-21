@@ -14,27 +14,30 @@ background-color:#f1f1f1;
 	
 }
 
-.limitado{
-	max-width: 80%!important;
-	margin:0 auto!important;
-}
+
 p{
 	color: #FFFFFF;
 	font-size: 1.5em;
 }
 
-
+iframe, object, embed{max-width: 100%;
+  pointer-events: none;}
 
 .home{
+	
 	margin:0 auto;
 	width:80%;
 	height:100%;
-	background-image: url(../imgs/myfondo.png);
+	background-image: url(../imgs/FondoDegradado.png);
 	background-repeat: repeat-y;
 	background-repeat: repeat-x;
 	z-index:-100;
+	
 }
-
+.fondo{
+		background-image: url(../imgs/FondoDegradado.png);
+		width:80%;
+}
 .mylogo{
 	margin:0 auto;
 	max-width:20%;
@@ -56,29 +59,33 @@ p{
 
 
 /*Inicio map responsive*/
-.map-responsive{
-    overflow:hidden;
-    padding-bottom:56.25%;
-    position:relative;
-    height:0;
-}
-.map-responsive iframe{
 
-	right:0;
-    top:0;
-    height:5%;
-    width:50%;
-    position:absolute;
+.google-maps {
+position: relative;
+padding-bottom: 75%; // This is the aspect ratio
+height: 0;
+overflow: hidden;
+margin:0 auto!important;
+text-align:center;
 }
+.google-maps iframe {
+position: absolute;
+top: 0;
+left: 0;
+width: 80% !important;
+height: 100% !important;
+}
+
+
 /*End map reponsive*/
 
 .divsocial{
 	background-color: #c01f25;
-	max-width:60%;
+	width:80%;
 	height:45px;
-	left:0!important;
-	right:0!important;
-	position:absolute;
+	margin:0 auto!important;
+	
+
 }
 
 /*
@@ -109,7 +116,7 @@ p{
 
 .myscroll{
 	margin:0 auto;
-	margin-top:-80px;
+	margin-top:-30px;
 }
 
 
@@ -175,12 +182,15 @@ div.well {
 }
 
 .contacto{
-	max-width:80%;
-}
-.contacto, .suscribete{
 	text-align: center;
+	padding-left:10%;
+	padding-right:10%;
 }
 
+.btnenviar{
+	margin:0 auto;
+	max-width:20%;
+}
 
 
 .facebook, .facebook img{
