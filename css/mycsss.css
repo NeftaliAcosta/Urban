@@ -1,0 +1,219 @@
+
+html,body{
+
+margin:0px;
+
+height:100%;
+background-color:#f1f1f1;
+
+}
+
+
+.mycuerpo{
+	background-color: #f1f1f1;
+	
+}
+
+.limitado{
+	max-width: 80%!important;
+	margin:0 auto!important;
+}
+p{
+	color: #FFFFFF;
+	font-size: 1.5em;
+}
+
+
+
+.home{
+	margin:0 auto;
+	width:80%;
+	height:100%;
+	background-image: url(../imgs/myfondo.png);
+	background-repeat: repeat-y;
+	background-repeat: repeat-x;
+	z-index:-100;
+}
+
+.mylogo{
+	margin:0 auto;
+	max-width:20%;
+}
+
+.myimg{
+	max-width:45%;
+	margin:0 auto;
+}
+
+
+
+.xbox{
+	text-align:center;
+	margin:0 auto!important;
+	position:relative;
+}
+
+
+
+/*Inicio map responsive*/
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.map-responsive iframe{
+
+	right:0;
+    top:0;
+    height:5%;
+    width:50%;
+    position:absolute;
+}
+/*End map reponsive*/
+
+.divsocial{
+	background-color: #c01f25;
+	max-width:60%;
+	height:45px;
+	left:0!important;
+	right:0!important;
+	position:absolute;
+}
+
+/*
+.divsocial{
+	background-color: #c01f25;
+	width: 80%;
+	height:45px;
+	margin:0 auto!important;
+	position:absolute;
+}
+*/
+.divsocial .icon{
+	display:inline;
+	max-width:100%;
+	max-height:100%;
+	margin: 0 auto;
+	padding:5px;
+}
+
+.degradado{
+	
+	background-image: url(../imgs/Degradado.png);
+	background-repeat: repeat-x;
+	z-index: 2;
+	position:relative;
+
+}
+
+.myscroll{
+	margin:0 auto;
+	margin-top:-80px;
+}
+
+
+.izquierdo{
+	
+	background-image: url(../imgs/MarcoGaleriaIzq.png);
+	-webkit-background-size: 100% 100%;           /* Safari 3.0 */
+    -moz-background-size: 100% 100%;           /* Gecko 1.9.2 (Firefox 3.6) */
+    -o-background-size: 100% 100%;           /* Opera 9.5 */
+    background-size: 100% 100%; 
+	z-index: 22!important;
+	padding:27px;
+
+
+}
+.centro{ 
+	
+	background-image: url(../imgs/MarcoGaleriaMedio.png);
+	-webkit-background-size: 100% 100%;           /* Safari 3.0 */
+    -moz-background-size: 100% 100%;           /* Gecko 1.9.2 (Firefox 3.6) */
+    -o-background-size: 100% 100%;           /* Opera 9.5 */
+    background-size: 100% 100%; 
+	z-index: 22!important;
+	padding:27px;
+}
+.derecho{
+
+	background-image: url(../imgs/MarcoGaleriaDer.png);
+	-webkit-background-size: 100% 100%;           /* Safari 3.0 */
+    -moz-background-size: 100% 100%;           /* Gecko 1.9.2 (Firefox 3.6) */
+    -o-background-size: 100% 100%;           /* Opera 9.5 */
+    background-size: 100% 100%; 
+	z-index: 22!important;
+	padding:27px;
+}
+ 
+
+
+.mycarousel img{
+	position:relative;
+	z-index:1!important;
+	 max-width: 80%!important;
+	 margin:0 auto;
+}
+
+div.well {
+   background-color: rgba(245, 245, 245, 0.4);
+      opacity: 0.9; /* opacity [0-1] */
+    -moz-opacity: 0.9; /* opacity [0-1] */
+    -webkit-opacity: 0.9; /* opacity [0-1] */
+    background-color: blue;
+}
+
+.carousel-inner {
+    position: relative;
+    width: 75%!important;
+    overflow: hidden;
+	margin: 0 auto;
+}
+
+.carousel-control.left, .carousel-control.right{
+	background-image: none;
+}
+
+.contacto{
+	max-width:80%;
+}
+.contacto, .suscribete{
+	text-align: center;
+}
+
+
+
+.facebook, .facebook img{
+	margin:0 auto;
+}
+.suscribete img{
+	margin:0 auto;
+	text-align: center;
+}
+
+
+.footer{
+	background-color:#c01f25;
+	text-align: center;
+	
+	
+}
+
+.footer p{
+	font-size:15px!important;
+}
+
+.firma{
+	color: gray;
+}
+
+
+.sus{
+	background-color: #c01f25; 
+	padding:10px;
+}
+
+.sus h3{
+	color:#ffffff;
+	
+}
