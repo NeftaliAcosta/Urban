@@ -25,7 +25,7 @@ iframe, object, embed{max-width: 100%;
 
 .home{
 	
-	margin:0 auto;
+	margin: 0 auto;
 	width:80%;
 	height:100%;
 	background-image: url(../imgs/FondoDegradado.png);
@@ -34,9 +34,19 @@ iframe, object, embed{max-width: 100%;
 	z-index:-100;
 	
 }
+
+
+
 .fondo{
 		background-image: url(../imgs/FondoDegradado.png);
 		width:80%;
+		padding-top:20px;
+		padding-bottom:20px;
+}
+
+.myfondo{
+	background-image: url(../imgs/FondoWeb.png);
+	width:80%;
 }
 .mylogo{
 	margin:0 auto;
@@ -115,8 +125,9 @@ height: 100% !important;
 }
 
 .myscroll{
-	margin:0 auto;
-	margin-top:-30px;
+	margin-left: auto;
+  margin-right: auto;
+	margin-top:-55px;
 }
 
 
@@ -196,6 +207,10 @@ div.well {
 .facebook, .facebook img{
 	margin:0 auto;
 }
+
+.instagram, .instagram img{
+	margin:0 auto;
+}
 .suscribete img{
 	margin:0 auto;
 	text-align: center;
@@ -223,7 +238,12 @@ div.well {
 	padding:10px;
 }
 
-.sus h3{
+.sus h4{
 	color:#ffffff;
-	
+	text-align:center;
+}
+
+.footer a{
+	 text-decoration:none;   
+	 color:#FFFFFF;
 }
