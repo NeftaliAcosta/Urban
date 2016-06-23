@@ -5,31 +5,35 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Urban</title>
+
+
 <link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/datepicker.css">
+<link rel="stylesheet" href="css/bootstrap-theme.min.css" >
 <link rel="stylesheet" href="css/mycsss.css">
 
 
-<!-- Optional theme -->
-<link rel="stylesheet" href="css/bootstrap-theme.min.css" >
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-
 <!-- Latest compiled and minified JavaScript -->
+<script src="js/jquery-1.12.4.js"></script>
+<script type="text/javascript" src="js/moment/moment.js"></script>
+<script type="text/javascript" src="js/transition.js"></script>
+<script type="text/javascript" src="js/collapse.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/bootstrap-datetimepicker.min.js"></script>
 
 
 <!--instagram-->
  <style>body { margin: 0; }</style>
  
  <link rel="stylesheet" href="http://gubynetwork.com/urban/instalink/instalink-2.0.6.min.css">
- <script src="http://gubynetwork.com/urban/src/vendor/jquery.min.js"></script>
+ <!--<script src="http://gubynetwork.com/urban/src/vendor/jquery.min.js"></script>-->
  <script src="http://gubynetwork.com/urban/instalink/instalink-2.0.6.min.js"></script>
  
  
  
  <!-------------Fancy--------------->
  <!-- Add jQuery library -->
-<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<!--<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>-->
 
 <!-- Add mousewheel plugin (this is optional) -->
 <script type="text/javascript" src="lib/jquery.mousewheel-3.0.6.pack.js"></script>
@@ -63,14 +67,19 @@
 	$(document).ready(function() {
 		$(".fancybox").fancybox();
 	});
-</script>
-<script type="text/javascript">
-            $(function () {
-                $('#datetimepicker2').datetimepicker({
-                    locale: 'ru'
-                });
+	
+	;(function (global, factory) {
+   typeof exports === 'object' && typeof module !== 'undefined'
+       && typeof require === 'function' ? factory(require('../moment')) :
+   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
+   factory(global.moment)
+}(this, function (moment) { 'use strict';
+
+
+	$(function () {
+                $('#datetimepicker1').datetimepicker({locale: 'es'});
             });
-        </script>
+</script>
 
 
 </head> 
@@ -182,27 +191,89 @@
 				  </fieldset>
 				  
 				   <div class="col-xs12 col-sm-6 ">
-				   <div class='input-group date' id='datetimepicker2'>
-						<input type='text' class="form-control" />
-						<span class="input-group-addon">
-							<span class="glyphicon glyphicon-calendar"></span>
-						</span>
+					   <div class='input-group date' id='datetimepicker1'>
+							<input type='text' class="form-control" />
+							<span class="input-group-addon">
+								<span class="glyphicon glyphicon-calendar"></span>
+							</span>
+						</div>
 					</div>
-					</div>
-
-				</div>
 					<div class="col-xs12 col-sm-6">
 						<input type="email" class="form-control" id="exampleInputEmail1" placeholder="*E-mail">
 					</div>
+					
+					
 				   
 				<img src="imgs/BotonFormulario.png" class="img-responsive btnenviar" >
 				</form>
 			</div><!--Fin formulario de contacto-->
+			
+			
+			
+			
+			
+			
+			
+			<div class="row sociales">
+			<div class="col-xs-12 col-sm-4 facebook">
+				<img src="imgs/Siguenos.png" class="img-responsive">
+				<div class="fb-page" data-href="https://www.facebook.com/theurbanlive/" data-tabs="timeline" data-height="455" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/theurbanlive/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/theurbanlive/">Neftali Acosta</a></blockquote></div>
+			</div>
+			
+			<div class="col-xs-12 col-sm-4">
+			<img src="imgs/Siguenos.png" class="img-responsive">
+			<div data-il
+				 data-il-api="/instalink/api/"
+				 data-il-username="theurbanlive"
+				 data-il-hashtag=""
+				 data-il-lang="en"
+				 data-il-show-heading="true"
+				 data-il-scroll="true"
+				 data-il-width="100%"
+				 data-il-height="455px"
+				 data-il-image-size="medium"
+				 data-il-bg-color="#285989"
+				 data-il-content-bg-color="#F8F8F8"
+				 data-il-font-color="#FFFFFF"
+				 data-il-ban="">
+			</div>
+			</div>
+			
+			<div class="col-xs-12 col-sm-4 suscribete">
+				<img src="imgs/Suscribete.png" class="img-responsive">
+			
+					<div class="sus">
+					<h3>SUSCRIBETE Y RECIBE NUESTRAS NOTICIAS Y PROMOCIONES</h3>
+					<form role="form">
+						  <div class="form-group">
+			
+							<input type="text" class="form-control" id="nombre" placeholder="*Nombre">
+						  </div>
+						  <div class="form-group">
+		
+							<input type="text" class="form-control" id="telefono" placeholder="*Teléfono">
+						  </div>
+						  <div class="form-group">
+		
+							<input type="email" class="form-control" id="email" placeholder="*Correo">
+						  </div>
+						  <!--<button type="submit" class="btn btn-default">Submit</button>-->
+						  <img src="imgs/BotonFooter.png" class="img-responsive">
+						</form>
+					</div>
+				
+					<!--<img src="imgs/Suscribete.png" class="img-responsive">-->
+					<!--<img src="imgs/AnuncioFooter.png" class="img-responsive">-->
+					<br>
+					<img src="imgs/TelFooter.png" class="responsive">
+			</div>
+		
+		</div><!--Fin redes sociales-->
 
 	</div><!--fin div fondo-->
 	
 	
-	<!--Fin Carouse-->
+	
 		
 
 
